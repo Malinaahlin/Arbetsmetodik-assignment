@@ -27,6 +27,15 @@ Det här är en webbsida för att skapa en todo lista där man kan skriva nya to
 
 ![image](./assets/Assessibility-todoApp.png)
 
+## Commits
+
+- `refactor` - Ändrar ingen funktionalitet, endast förändring av kod.
+- `style` - Tar bort onödiga rader, och lägger till nödvändiga tecken.
+- `docs` - Dokumentation.
+- `feat` - För nya funktioner.
+- `fix` - För buggar.
+- `test` - För tester.
+
 ## Använts i projektet
 
 - GitHub
