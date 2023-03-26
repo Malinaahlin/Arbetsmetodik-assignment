@@ -37,7 +37,8 @@ h1 {
   cursor: pointer;
 }
 
-input, button {
+input,
+button {
   appearance: none;
   border: none;
   outline: none;
@@ -69,11 +70,13 @@ h2 {
   transition: 0.4s;
 }
 
-#new-todo-submit:hover , #sortBtn:hover {
+#new-todo-submit:hover,
+#sortBtn:hover {
   opacity: 0.8;
 }
 
-#new-todo-submit:active , #sortBtn:active {
+#new-todo-submit:active,
+#sortBtn:active {
   opacity: 0.6;
 }
 
@@ -102,6 +105,5 @@ ul {
   margin: 0 0.5rem;
   font-size: 1.125rem;
   font-weight: 700;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
