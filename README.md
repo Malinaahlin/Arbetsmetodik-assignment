@@ -1,2 +1,46 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-8d59dc4de5201274e310e4c54b9627a8934c3b88527886e3b421487c677d23eb.svg)](https://classroom.github.com/a/9nBRTBFZ)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10631196&assignment_repo_type=AssignmentRepo)
+# Todo-lista
+
+Andra inlämningsuppgiften i kursen "Arbetsmetodik för utvecklare" på Medieinstitutet.
+
+## Om projektet
+
+Det här är en webbsida för att skapa en todo lista där man kan skriva nya todos, markera utförda uppgifter men även radera dessa helt. Webbsidan är ett tidigare projekt som med hjälp av den lästa kursen "Arbetsmetodik för utvecklare" ska ge färdigheter att förbättra den befintliga koden och dess struktur. Samt att få kunskaper om hur man ska skriva sina commits på ett korrekt sätt, hur man skapar issues, branches och hantering av pull requests.
+
+- [x] Dokumentation README
+- [] Förbättra fil-struktur
+- [] Konvertera till TypeScript
+- [] Enhetlig kodkvalitet
+- [] Refaktorera
+- [] Ta bort onödig kod
+- [] Tillgänglighetsgranskning
+- [] Lighthouse-analys
+
+![Image](./assets/Todo.png)
+
+## Använts i projektet
+
+- GitHub
+- Javascript
+- HTML
+- SCSS/CSS
+
+## Kom igång
+
+1.  Klona ned det här repot och öppna i ett utvecklingsverktyg.
+
+        git clone "https://github.com/Medieinstitutet/inlamningsuppgift-2-Malinaahlin.git"
+
+2.  Installation
+
+    npm install
+
+3.  Starta projekt
+
+    npm run dev
+
+## Mer om mig
+
+MALIN ÅHLIN
+
+- [LinkedIn](https://www.linkedin.com/in/malin-aahlin/)
+- [Github](https://github.com/Malinaahlin)
