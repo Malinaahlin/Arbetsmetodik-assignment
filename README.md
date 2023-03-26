@@ -7,8 +7,8 @@ Andra inlämningsuppgiften i kursen "Arbetsmetodik för utvecklare" på Medieins
 Det här är en webbsida för att skapa en todo lista där man kan skriva nya todos, markera utförda uppgifter men även radera dessa helt. Webbsidan är ett tidigare projekt som med hjälp av den lästa kursen "Arbetsmetodik för utvecklare" ska ge färdigheter att förbättra den befintliga koden och dess struktur. Samt att få kunskaper om hur man ska skriva sina commits på ett korrekt sätt, hur man skapar issues, branches och hantering av pull requests.
 
 - [x] Dokumentation README
-- [] Förbättra fil-struktur
-- [] Konvertera till TypeScript
+- [x] Förbättra fil-struktur
+- [x] Konvertera till TypeScript
 - [] Enhetlig kodkvalitet
 - [] Refaktorera
 - [] Ta bort onödig kod

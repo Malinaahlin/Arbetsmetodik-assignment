@@ -5,5 +5,8 @@
   },
   "scripts": {
     "dev": "npx parcel ./src/index.html"
+  },
+  "dependencies": {
+    "typescript": "^5.0.2"
   }
 }

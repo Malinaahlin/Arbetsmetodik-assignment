@@ -1,7 +1,7 @@
 import { ListValues } from "./models/values";
 
   
-  let myArray = [];
+  let myArray: ListValues [] = [];
   
   let firstTodo = new ListValues ("Tvätta", false);
   let secondTodo = new ListValues ("Städa", false);
@@ -9,6 +9,8 @@ import { ListValues } from "./models/values";
   myArray.push(firstTodo);
   myArray.push(secondTodo);
   myArray.push(thirdTodo);
+  //myArray.push(firstTodo, secondTodo, thirdTodo);
+  
   let listContainer = document.createElement("div");
   listContainer.className = "listContainer";
   
@@ -20,41 +22,41 @@ import { ListValues } from "./models/values";
     for (let i = 0; i < myArray.length; i++) {
       let thisTodoItem = myArray[i];
   
-      let arrayContainer = document.createElement("ul");
+      let arrayContainer = document.createElement("ul") as HTMLUListElement;
     //   arrayContainer.className = "arrayContainer";      klass på UL
   
-
-      let arrayList = document.createElement("li");
+      
+      let arrayList = document.createElement("li") as HTMLLIElement;
       arrayList.id = ("todos");
     // arrayList.className = "todos";
-      arrayList.innerHTML = thisTodoItem.name;
+      arrayList.innerHTML = thisTodoItem.nameValue;
   
-      let input = document.createElement("input");
+      let input = document.createElement("input") as HTMLInputElement;
       input.id = "new-todo-input";
       let styling = arrayList;
     //   input.innerHTML = "Klar";
   
-      if (thisTodoItem.checked === true) {
+      if (thisTodoItem.checkedValue === true) {
         styling.style.textDecoration = "line-through";
         input.checked = true;
       } else {
         styling.style.textDecoration = "none";
-        thisTodoItem.checked = false;
+        thisTodoItem.checkedValue = false;
       }
   
       input.addEventListener("change", function check() {
         if (input.checked === true) {
           styling.style.textDecoration = "line-through";
-          thisTodoItem.checked = true;
+          thisTodoItem.checkedValue = true;
         } else {
           styling.style.textDecoration = "none";
-          thisTodoItem.checked = false;
+          thisTodoItem.checkedValue = false;
         }
       });
   
       input.setAttribute("type", "checkbox");
   
-      let deleteButton = document.createElement("button");
+      let deleteButton = document.createElement("button") as HTMLButtonElement;
       deleteButton.addEventListener("click", function remove() {
         myArray.splice(i, 1);
         printList();
@@ -63,7 +65,7 @@ import { ListValues } from "./models/values";
       deleteButton.setAttribute("type", "button");
       deleteButton.innerHTML = "Radera";
   
-      let btn = document.createElement("li");
+      let btn = document.createElement("li") as HTMLLIElement;
     //   btn.innerHTML = "Klar";
       let deleteBtn = document.createElement("li");
   
@@ -78,10 +80,10 @@ import { ListValues } from "./models/values";
     }
   }
   
-  document.getElementById("container").appendChild(listContainer);
+  (document.getElementById("container") as HTMLDivElement).appendChild(listContainer);
   
-  document.getElementById("todo-form").addEventListener("submit", addToList);
-  let newTodoInput = document.getElementById("new-todo-input");
+  (document.getElementById("todo-form") as HTMLFormElement).addEventListener("submit", addToList);
+  let newTodoInput = document.getElementById("new-todo-input") as HTMLInputElement;
   
   function addToList(e) {
     e.preventDefault();
@@ -94,12 +96,12 @@ import { ListValues } from "./models/values";
     }
   }
   
-  document.getElementById("sortBtn").addEventListener("click", sortList);
+  (document.getElementById("sortBtn") as HTMLButtonElement).addEventListener("click", sortList);
   
   function sortList() {
     myArray.sort((a, b) => {
-        if(a.name > b.name) return 1;
-        if(a.name < b.name) return -1;
+        if(a.nameValue > b.nameValue) return 1;
+        if(a.nameValue < b.nameValue) return -1;
         return 0;
     });
     printList();
