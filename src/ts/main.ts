@@ -19,34 +19,25 @@ function printList() {
     let thisTodoItem = myArray[i];
 
     let arrayContainer = document.createElement('ul') as HTMLUListElement;
-   
+
     let arrayList = document.createElement('li') as HTMLLIElement;
     arrayList.id = 'todos';
+    // @ts-ignore
     arrayList.innerHTML = thisTodoItem.nameValue;
 
     let input = document.createElement('input') as HTMLInputElement;
     input.id = 'new-todo-input';
-    let styling = arrayList;
-
-    if (thisTodoItem.checkedValue === true) {
-      styling.style.textDecoration = 'line-through';
-      input.checked = true;
-    } else {
-      styling.style.textDecoration = 'none';
-      thisTodoItem.checkedValue = false;
-    }
+    input.setAttribute('type', 'checkbox');
 
     input.addEventListener('change', function check() {
       if (input.checked === true) {
-        styling.style.textDecoration = 'line-through';
+        arrayList.style.textDecoration = 'line-through';
         thisTodoItem.checkedValue = true;
       } else {
-        styling.style.textDecoration = 'none';
+        arrayList.style.textDecoration = 'none';
         thisTodoItem.checkedValue = false;
       }
     });
-
-    input.setAttribute('type', 'checkbox');
 
     let deleteButton = document.createElement('button') as HTMLButtonElement;
     deleteButton.addEventListener('click', function remove() {
