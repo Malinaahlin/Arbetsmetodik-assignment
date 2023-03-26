@@ -9,7 +9,7 @@ Det här är en webbsida för att skapa en todo lista där man kan skriva nya to
 - [x] Dokumentation README
 - [x] Förbättra fil-struktur
 - [x] Konvertera till TypeScript
-- [] Enhetlig kodkvalitet
+- [x] Enhetlig kodkvalitet
 - [] Refaktorera
 - [] Ta bort onödig kod
 - [] Tillgänglighetsgranskning
