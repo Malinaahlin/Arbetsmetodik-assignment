@@ -2,5 +2,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
     "parcel": "^2.8.0"
+  },
+  "scripts": {
+    "dev": "npx parcel ./src/index.html"
   }
 }
