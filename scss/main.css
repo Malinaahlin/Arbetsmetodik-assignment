@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9ba3eb;
+  color: #dbdffd;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+#new-todo-input {
+  background-color: #646fd4;
+  color: #eee;
+  border-radius: 1rem;
+  flex: 1 1 0%;
+  margin-right: 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+#new-todo-input::placeholder {
+  color: #dbdffd;
+}
+
+#new-todo-input:hover {
+  cursor: pointer;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+h2 {
+  margin: 2rem 0;
+  font-weight: 100;
+}
+
+#new-todo-submit {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #808ffc, #342c6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#sortBtn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #808ffc, #342c6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-todo-submit:hover, #sortBtn:hover {
+  opacity: 0.8;
+}
+
+#new-todo-submit:active, #sortBtn:active {
+  opacity: 0.6;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  background-color: #454fad;
+  border-radius: 1rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  align-items: center;
+}
+
+.listContainer #new-todo-input {
+  appearance: auto;
+}
+
+#todos {
+  margin-right: auto;
+}
+
+.delete {
+  color: #342c6d;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+
+/*# sourceMappingURL=main.css.map */
