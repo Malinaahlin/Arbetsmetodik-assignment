@@ -10,17 +10,27 @@ Det här är en webbsida för att skapa en todo lista där man kan skriva nya to
 - [x] Förbättra fil-struktur
 - [x] Konvertera till TypeScript
 - [x] Enhetlig kodkvalitet
-- [] Refaktorera
+- [x] Refaktorera
 - [x] Ta bort onödig kod
-- [] Tillgänglighetsgranskning
-- [] Lighthouse-analys
+- [x] Tillgänglighetsgranskning
+- [x] Lighthouse-analys
+
+## Applikation
 
 ![Image](./assets/Todo.png)
+
+## Lighthouse-analys
+
+![image](./assets/Lighthouse-todoApp.png)
+
+## Tillgänglighets granskning
+
+![image](./assets/Assessibility-todoApp.png)
 
 ## Använts i projektet
 
 - GitHub
-- Javascript
+- TypeScript
 - HTML
 - SCSS/CSS
 
