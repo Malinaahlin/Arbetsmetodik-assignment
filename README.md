@@ -11,7 +11,7 @@ Det här är en webbsida för att skapa en todo lista där man kan skriva nya to
 - [x] Konvertera till TypeScript
 - [x] Enhetlig kodkvalitet
 - [] Refaktorera
-- [] Ta bort onödig kod
+- [x] Ta bort onödig kod
 - [] Tillgänglighetsgranskning
 - [] Lighthouse-analys
 

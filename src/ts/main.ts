@@ -5,10 +5,7 @@ let myArray: ListValues[] = [];
 let firstTodo = new ListValues('Tvätta', false);
 let secondTodo = new ListValues('Städa', false);
 let thirdTodo = new ListValues('Diska', false);
-myArray.push(firstTodo);
-myArray.push(secondTodo);
-myArray.push(thirdTodo);
-//myArray.push(firstTodo, secondTodo, thirdTodo);
+myArray.push(firstTodo, secondTodo, thirdTodo);
 
 let listContainer = document.createElement('div');
 listContainer.className = 'listContainer';
@@ -22,17 +19,14 @@ function printList() {
     let thisTodoItem = myArray[i];
 
     let arrayContainer = document.createElement('ul') as HTMLUListElement;
-    //   arrayContainer.className = "arrayContainer";      klass på UL
-
+   
     let arrayList = document.createElement('li') as HTMLLIElement;
     arrayList.id = 'todos';
-    // arrayList.className = "todos";
     arrayList.innerHTML = thisTodoItem.nameValue;
 
     let input = document.createElement('input') as HTMLInputElement;
     input.id = 'new-todo-input';
     let styling = arrayList;
-    //   input.innerHTML = "Klar";
 
     if (thisTodoItem.checkedValue === true) {
       styling.style.textDecoration = 'line-through';
@@ -64,12 +58,10 @@ function printList() {
     deleteButton.innerHTML = 'Radera';
 
     let btn = document.createElement('li') as HTMLLIElement;
-    //   btn.innerHTML = "Klar";
     let deleteBtn = document.createElement('li');
 
     btn.appendChild(input);
     deleteBtn.appendChild(deleteButton);
-
     listContainer.appendChild(arrayContainer);
     arrayContainer.appendChild(arrayList);
     arrayContainer.appendChild(btn);
